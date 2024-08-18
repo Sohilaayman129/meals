@@ -1,0 +1,15 @@
+<div class="container bg-danger-subtle">
+    <div class="row">
+    @for (meal of meals; track $index) {
+        <div class="col-lg-4">
+            <div class="border">
+                <img [src]="meal.image_url" class="w-75" alt="">
+                <h2>{{meal.title.split(" ", 2).join(" ")}}</h2>
+                <span><strong> publisher</strong> {{meal.publisher}}</span>
+                <h4 class="h6"><strong>URL</strong>  {{meal.publisher_url}}</h4>
+                <h3 class="h6">ID {{meal.recipe_id}}</h3>
+            </div>
+        </div>
+    }
+    </div>
+</div>

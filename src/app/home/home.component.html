@@ -1,0 +1,126 @@
+
+<div class="container bg-danger-subtle">
+  <div class="row">
+  @for (mealfish of mealsfish; track $index) {
+      <div class="col-lg-4">
+          <div class="border">
+              <img [src]="mealfish.image_url" class="w-75" alt="">
+              <h2>{{mealfish.title.split(" ", 2).join(" ")}}</h2>
+              <span><strong> publisher</strong> {{mealfish.publisher}}</span>
+              <h4 class="h6"><strong>URL</strong>  {{mealfish.publisher_url}}</h4>
+              <h3 class="h6">ID {{mealfish.recipe_id}}</h3>
+          </div>
+      </div>
+  }
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ <div class="container ">
+  <div class="row g-5">   -->
+    <!-- product ... object -->
+
+    
+<!-- 
+ @for( product of products ;track $index){
+  @if (product.OnSale)
+  {
+
+<div class=" col-lg-4 " [class.bg-info]="product.OnSale">
+  <img [src]="product.ImgSrc" class="w-100" alt="">
+<h4>{{$index}}</h4>
+<h5>{{$count}}</h5>
+  <h1>{{product.name}}</h1>
+  <h3>{{ product.price}}</h3>
+  <span>{{product.OnSale}}</span>
+</div>
+
+}
+
+} 
+
+</div>
+
+
+  </div> -->
+   <!-- @empty { 
+
+    <H1 class="bg-info text-center fw-bold fs-2 text-uppercase pt-5 py-5 ">not found page</H1>
+
+   }
+ -->
+
+
+
+<!-- 
+   
+   <h3 class="bg-info d-none">ahmed </h3>
+  
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<div class="container bg-danger-subtle">
+    <div class="row">
+       @for (information of informations; track $index) {
+        <div class="col-lg-4">
+            <div class="border">
+                <img [src]="information.image_url" class="w-75" alt="">
+                <h2>{{information.title.split(" ", 2).join(" ")}}</h2>
+                <span><strong>publisher </strong>{{information.publisher}}</span>
+                <h3 class="h6"><strong>URL</strong> {{information.publisher_url}} </h3>
+                <h4 class="h6">ID {{information.recipe_id}} </h4>
+
+            </div>
+        </div>
+       }
+         
+    </div>
+</div>
